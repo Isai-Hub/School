@@ -23,14 +23,14 @@ body{
     font-family: "Passion One";
     -webkit-background-clip: text;
     margin: 0;
-    background: linear-gradient(white,#3e447b,#3e447b, white);
+    background: linear-gradient(white);
 }
 .navbar{
     background:  linear-gradient(#3e447b, rgba(0, 0, 0, 0.5)),
 				url(img/golden-gate-view-photo.jpg) right top / cover;
                 background-position: center 52%;
     background-repeat: no-repeat;
-    height: 730px;
+    height: 750px;
 }
 nav{
     display: flex;
@@ -73,12 +73,15 @@ header{
     background-size: cover;
     margin-bottom: 30px;
 }
+
+
 main{
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px;
     border-radius: 10px;
+    gap: 80px;
 }
 h1 {
     text-align: center;
@@ -93,7 +96,7 @@ h1 {
 }
 button{
     background: linear-gradient(#180b18, rgba(24, 11,24, 0.6));
-    width: 170px;
+    width: 10px;
     height: 50px;
     border-radius: 10px;
     border: 1px solid transparent;
@@ -112,7 +115,7 @@ button:focus{
 h2{
     font-family: "Teko", serif;
     text-align: center;
-    color: white;
+    color: black;
     padding: 40px;
     font-size: 2.5em;
 }
@@ -121,16 +124,21 @@ hr{
 }
 
 
-
+.grid{
+    max-width: 1400px;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 500px 1fr 1fr;
+    gap: 20px;
+}
 
 
 .goldengate{
-    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/golden-gate-photo.jpg) right top / cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/golden-gate-photo.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 480px;
-    height: 500px;
-    border-radius: 30px;
+    width: 400px;
+    height: 400px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     justify-content: center;
@@ -151,12 +159,11 @@ hr{
 
 
 .alcatraz{
-    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/alcatraz-photo.jpg) right top / cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/alcatraz-photo.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 480px;
-    height: 500px;
-    border-radius: 30px;
+    width: 400px;
+    height: 400px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     justify-content: center;
@@ -174,17 +181,38 @@ hr{
 }
 
 
-
-
-
-.coit{
-    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/coit-photo.jpg) right top / cover;
+.chase-center{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/chase-center.jpg);
     background-position: center 75%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 480px;
-    height: 500px;
-    border-radius: 30px;
+    width: 400px;
+    height: 400px;
+    transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+.chase{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px 30px 0px 0px;
+    font-family: "Jersey 15", serif;
+    font-size: 1.2em;
+    color: white;
+}
+.chase-center:hover{
+    transform: scale(1.1);
+}
+
+
+.coit{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/coit-photo.jpg) right top / cover;
+    background-position: center 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     justify-content: center;
@@ -206,13 +234,12 @@ hr{
 
 
 .painted-ladies{
-    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/painted-ladies-photo.jpg) right top / cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/painted-ladies-photo.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 480px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     text-align: center;
-    border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     justify-content: center;
@@ -232,13 +259,12 @@ hr{
 
 
 .lombard{
-    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/lombard-photo.jpg) right top / cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/lombard-photo.jpg) right top / cover;
     background-position: center 75%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 480px;
-    height: 500px;
-    border-radius: 30px;
+    width: 400px;
+    height: 400px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     justify-content: center;
@@ -262,12 +288,11 @@ hr{
 
 
 .palace-of-arts{
-    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/palace-of-arts-photo.jpg) right top / cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/palace-of-arts-photo.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 480px;
-    height: 500px;
-    border-radius: 30px;
+    width: 400px;
+    height: 400px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     justify-content: center;
@@ -288,13 +313,12 @@ hr{
 
 
 .twin-peaks{
-    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/twin-peaks-photo.jpg) right top / cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/twin-peaks-photo.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 480px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     text-align: center;
-    border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     justify-content: center;
@@ -314,12 +338,11 @@ hr{
 
 
 .oracle-park{
-    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/giants-oracle-photo.jpg) right top / cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/giants-oracle-photo.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 480px;
-    height: 500px;
-    border-radius: 30px;
+    width: 400px;
+    height: 400px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     justify-content: center;
@@ -333,6 +356,28 @@ hr{
     color: #fff;
 }
 .oracle-park:hover{
+    transform: scale(1.1);
+}
+
+.zoo{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/zoo-sf.jpg) right top / cover;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+.zoo-park{
+    display: flex;
+    align-items: center;
+    border-radius: 30px 30px 0px 0px;
+    font-family: "Jersey 15", serif;
+    font-size: 1.2em;
+    color: #fff;
+}
+.zoo:hover{
     transform: scale(1.1);
 }
 
