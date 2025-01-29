@@ -30,7 +30,10 @@ body{
 				url(img/golden-gate-view-photo.jpg) right top / cover;
                 background-position: center 52%;
     background-repeat: no-repeat;
-    height: 930px;
+    height: 730px;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 nav{
     display: flex;
