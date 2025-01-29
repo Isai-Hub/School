@@ -405,6 +405,51 @@ hr{
 }
 
 
+.city-hall{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/city-hall.jpg) right top / cover;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+.hall{
+    display: flex;
+    align-items: center;
+    border-radius: 30px 30px 0px 0px;
+    font-family: "Jersey 15", serif;
+    font-size: 1.2em;
+    color: #fff;
+}
+.city-hall:hover{
+    transform: scale(1.1);
+}
+
+
+.sciences-academy{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/sciences-academy.jpg) right top / cover;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+.academy{
+    display: flex;
+    align-items: center;
+    border-radius: 30px 30px 0px 0px;
+    font-family: "Jersey 15", serif;
+    font-size: 1.2em;
+    color: #fff;
+}
+.sciences-academy:hover{
+    transform: scale(1.1);
+}
+
 
 
 footer{
