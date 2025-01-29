@@ -26,7 +26,7 @@ body{
     background: linear-gradient(#3e447b, #5e8dc5);
 }
 .navbar{
-    background:  linear-gradient(#3e447b, rgba(0, 0, 0, 0.6)),
+    background:  linear-gradient(#3e447b, rgba(0, 0, 0, 0.5)),
 				url(img/golden-gate-view-photo.jpg) right top / cover;
                 background-position: center 52%;
     background-repeat: no-repeat;
@@ -112,7 +112,7 @@ button:focus{
 h2{
     font-family: "Teko", serif;
     text-align: center;
-    color: #180b18;
+    color: #9aadbd;
     padding: 40px;
     font-size: 2.5em;
 }
