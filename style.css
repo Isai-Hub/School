@@ -1,0 +1,399 @@
+html {
+    -moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+.jersey-15-regular {
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+  .anton-regular {
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+  }   
+  .teko-uniquifier {
+    font-family: "Teko", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+body{
+    font-family: "Passion One";
+    -webkit-background-clip: text;
+    margin: 0;
+    background: linear-gradient(#3e447b, #5e8dc5);
+}
+.navbar{
+    background:  linear-gradient(#3e447b, rgba(0, 0, 0, 0.6)),
+				url(img/golden-gate-view-photo.jpg) right top / cover;
+                background-position: center 52%;
+    background-repeat: no-repeat;
+    height: 930px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    padding: 27px;
+    background: linear-gradient(black,rgb(62, 68, 123, 0.8));
+}
+nav ul{
+    padding-right: 50px;
+}
+nav li{
+    display: inline-block;
+    margin-right: 35px;
+    font-size: 23px;
+}
+#sf{
+    align-self: center;
+    font-size: 2em;
+    margin: 15px;
+    color: #9aadbd;
+    font-family: "Jersey 15", serif;
+    padding-left: 50px;
+}
+a{
+    font-family: "Jersey 15", serif;
+    text-decoration: none;
+    color: #9aadbd;
+    transition: all .5s;
+}
+a:hover, 
+a:focus {
+    color:#d3979e;
+}
+header{
+    text-align: center;
+    padding: 10%;
+	color: #fff;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+main{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: #9aadbd;
+    font-family: "Teko", serif;
+}
+.catch{
+    font-size: 28px;
+    color: #9aadbd;
+    font-family: "Teko", serif;
+}
+button{
+    background: linear-gradient(#180b18, rgba(24, 11,24, 0.6));
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-family: "Teko", serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: #9aadbd;
+}
+button:hover,
+button:focus{
+    font-size: 25px;
+}
+.explore{
+    margin: 70px;
+}
+h2{
+    font-family: "Teko", serif;
+    text-align: center;
+    color: #180b18;
+    padding: 40px;
+    font-size: 2.5em;
+}
+hr{
+    border: 1px solid #9aadbd;
+}
+
+
+.grid{
+    display: grid;
+    justify-items: center;
+    gap: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    max-width: 1400px;
+}
+
+
+.goldengate{
+    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/golden-gate-photo.jpg) right top / cover;
+    background-position: center;
+    background-size: cover;
+    width: 480px;
+    height: 500px;
+    text-align: center;
+    border-radius: 30px;
+    transition: transform .5s, filter 1s ease-in-out;
+    filter: grayscale(80%);
+}
+.gate{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(#CF453B, rgba(255, 0, 0, 0.2));
+    border-radius: 30px 30px 0px 0px;
+    font-family: "Jersey 15", serif;
+    font-size: 1.2em;
+}
+.goldengate:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+
+
+.alcatraz{
+    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/alcatraz-photo.jpg) right top / cover;
+    background-position: center;
+    background-size: cover;
+    width: 480px;
+    height: 500px;
+    text-align: center;
+    border-radius: 30px;
+    transition: transform .5s, filter 1s ease-in-out;
+    filter: grayscale(80%);
+}
+.traz{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#00693E, rgba(255, 255, 255, 0.2));
+    border-radius: 30px 30px 0px 0px;
+    font-family: "Jersey 15", serif;
+    font-size: 1.2em;
+}
+.alcatraz:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+
+
+
+.coit{
+    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/coit-photo.jpg) right top / cover;
+    background-position: center 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 480px;
+    height: 500px;
+    border-radius: 30px;
+    transition: transform .5s, filter 1s ease-in-out;
+    filter: grayscale(80%);
+}
+.tower{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(#FFFF00 , rgba(255, 0, 0, 0.2));
+    border-radius: 30px 30px 0px 0px;
+    font-family: "Jersey 15", serif;
+    font-size: 1.2em;
+}
+.coit:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+
+
+.painted-ladies{
+    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/painted-ladies-photo.jpg) right top / cover;
+    background-position: center;
+    background-size: cover;
+    width: 480px;
+    height: 500px;
+    text-align: center;
+    border-radius: 30px;
+    transition: transform .5s, filter 1s ease-in-out;
+    filter: grayscale(80%);
+}
+.ladies{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#ACE1AF, rgb(255,182,193, 0.2));
+    border-radius: 30px 30px 0px 0px;
+    font-family: "Jersey 15", serif;
+    font-size: 1.2em;
+}
+.painted-ladies:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+
+.lombard{
+    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/lombard-photo.jpg) right top / cover;
+    background-position: center 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 480px;
+    height: 500px;
+    border-radius: 30px;
+    transition: transform .5s, filter 1s ease-in-out;
+    filter: grayscale(80%);
+}
+.street{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient( brown , rgba(81, 255, 0, 0.4));
+    border-radius: 30px 30px 0px 0px;
+    font-family: "Jersey 15", serif;
+    font-size: 1.2em;
+}
+
+.lombard:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+
+
+
+.palace-of-arts{
+    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/palace-of-arts-photo.jpg) right top / cover;
+    background-position: center;
+    background-size: cover;
+    width: 480px;
+    height: 500px;
+    text-align: center;
+    border-radius: 30px;
+    transition: transform .5s, filter 1s ease-in-out;
+    filter: grayscale(80%);
+}
+.palace{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(255,79,0), rgba(255,248,220, 0.2));
+    border-radius: 30px 30px 0px 0px;
+    font-family: "Jersey 15", serif;
+    font-size: 1.2em;
+}
+.palace-of-arts:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+
+
+.twin-peaks{
+    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/twin-peaks-photo.jpg) right top / cover;
+    background-position: center;
+    background-size: cover;
+    width: 480px;
+    height: 500px;
+    text-align: center;
+    border-radius: 30px;
+    transition: transform .5s, filter 1s ease-in-out;
+    filter: grayscale(80%);
+}
+.twin{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(124, 107, 100), rgba(255,248,220, 0.2));
+    border-radius: 30px 30px 0px 0px;
+    font-family: "Jersey 15", serif;
+    font-size: 1.2em;
+}
+.twin-peaks:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+
+.oracle-park{
+    background: linear-gradient(#180b18, rgba(0, 0, 0, 0.1)), url(img/giants-oracle-photo.jpg) right top / cover;
+    background-position: center;
+    background-size: cover;
+    width: 480px;
+    height: 500px;
+    text-align: center;
+    border-radius: 30px;
+    transition: transform .5s, filter 1s ease-in-out;
+    filter: grayscale(80%);
+}
+.park{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(146, 76, 45), rgba(255,248,220, 0.2));
+    border-radius: 30px 30px 0px 0px;
+    font-family: "Jersey 15", serif;
+    font-size: 1.2em;
+}
+.oracle-park:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+
+
+footer{
+    color: #3c3b6e;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #180b18;
+    padding: 50px;
+}
+footer li{
+    display: inline-block;
+    font-size: 1.3em;
+    margin-right: 15px;
+    max-width: 1300px;
+}
+footer a{
+    color: #9aadbd;
+}
+.linked-in{
+    background-size: 100px;
+    width: 40px;
+    height: 40px;
+}
+.linked-in:hover{
+    background-color: #0072b1;
+    width: 40px;
+    height: 40px;
+}
+
+.git-hub{
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+}
+.git-hub:hover,
+.git-hub:focus{
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+}
+
+
+
+   
