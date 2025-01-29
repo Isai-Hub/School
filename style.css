@@ -23,7 +23,7 @@ body{
     font-family: "Passion One";
     -webkit-background-clip: text;
     margin: 0;
-    background: linear-gradient(white,#3e447b, white, #5e8dc5, white);
+    background: linear-gradient(white,#3e447b,#3e447b, white);
 }
 .navbar{
     background:  linear-gradient(#3e447b, rgba(0, 0, 0, 0.5)),
@@ -52,14 +52,14 @@ nav li{
     align-self: center;
     font-size: 1.8em;
     margin: 15px;
-    color: #9aadbd;
+    color: white;
     font-family: "Jersey 15", serif;
     padding-left: 50px;
 }
 a{
     font-family: "Jersey 15", serif;
     text-decoration: none;
-    color: #9aadbd;
+    color: white;
     transition: all .5s;
 }
 a:hover, 
@@ -83,12 +83,12 @@ main{
 h1 {
     text-align: center;
     font-size: 80px;
-    color: #9aadbd;
+    color: white;
     font-family: "Teko", serif;
 }
 .catch{
     font-size: 28px;
-    color: #9aadbd;
+    color: white;
     font-family: "Teko", serif;
 }
 button{
@@ -112,12 +112,12 @@ button:focus{
 h2{
     font-family: "Teko", serif;
     text-align: center;
-    color: #9aadbd;
+    color: white;
     padding: 40px;
     font-size: 2.5em;
 }
 hr{
-    border: 1px solid #9aadbd;
+    border: 1px solid black;
 }
 
 
