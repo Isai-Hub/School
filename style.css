@@ -23,14 +23,14 @@ body{
     font-family: "Passion One";
     -webkit-background-clip: text;
     margin: 0;
-    background: linear-gradient(#3e447b, #5e8dc5);
+    background: white;
 }
 .navbar{
     background:  linear-gradient(#3e447b, rgba(0, 0, 0, 0.5)),
 				url(img/golden-gate-view-photo.jpg) right top / cover;
                 background-position: center 52%;
     background-repeat: no-repeat;
-    height: 730px;
+    height: 670px;
     width: 1400px;
     margin-left: auto;
     margin-right: auto;
@@ -41,7 +41,7 @@ nav{
     align-items: center;
     background-repeat: no-repeat;
     padding: 27px;
-    background: linear-gradient(black,rgb(62, 68, 123, 0.8));
+    background: white;
 }
 nav ul{
     padding-right: 50px;
