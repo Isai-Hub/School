@@ -143,7 +143,6 @@ hr{
     text-align: center;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
-    filter: grayscale(80%);
 }
 .gate{
     display: flex;
@@ -155,7 +154,6 @@ hr{
     font-size: 1.2em;
 }
 .goldengate:hover{
-    filter: grayscale(0);
     transform: scale(1.1);
 }
 
@@ -171,7 +169,6 @@ hr{
     text-align: center;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
-    filter: grayscale(80%);
 }
 .traz{
     display: flex;
@@ -182,7 +179,6 @@ hr{
     font-size: 1.2em;
 }
 .alcatraz:hover{
-    filter: grayscale(0);
     transform: scale(1.1);
 }
 
@@ -199,7 +195,6 @@ hr{
     height: 500px;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
-    filter: grayscale(80%);
 }
 .tower{
     display: flex;
@@ -211,7 +206,6 @@ hr{
     font-size: 1.2em;
 }
 .coit:hover{
-    filter: grayscale(0);
     transform: scale(1.1);
 }
 
@@ -227,7 +221,6 @@ hr{
     text-align: center;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
-    filter: grayscale(80%);
 }
 .ladies{
     display: flex;
@@ -238,7 +231,6 @@ hr{
     font-size: 1.2em;
 }
 .painted-ladies:hover{
-    filter: grayscale(0);
     transform: scale(1.1);
 }
 
@@ -253,7 +245,6 @@ hr{
     height: 500px;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
-    filter: grayscale(80%);
 }
 .street{
     display: flex;
@@ -266,7 +257,6 @@ hr{
 }
 
 .lombard:hover{
-    filter: grayscale(0);
     transform: scale(1.1);
 }
 
@@ -283,7 +273,6 @@ hr{
     text-align: center;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
-    filter: grayscale(80%);
 }
 .palace{
     display: flex;
@@ -294,7 +283,6 @@ hr{
     font-size: 1.2em;
 }
 .palace-of-arts:hover{
-    filter: grayscale(0);
     transform: scale(1.1);
 }
 
@@ -310,7 +298,6 @@ hr{
     text-align: center;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
-    filter: grayscale(80%);
 }
 .twin{
     display: flex;
@@ -321,7 +308,6 @@ hr{
     font-size: 1.2em;
 }
 .twin-peaks:hover{
-    filter: grayscale(0);
     transform: scale(1.1);
 }
 
@@ -336,7 +322,6 @@ hr{
     text-align: center;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
-    filter: grayscale(80%);
 }
 .park{
     display: flex;
@@ -347,7 +332,6 @@ hr{
     font-size: 1.2em;
 }
 .oracle-park:hover{
-    filter: grayscale(0);
     transform: scale(1.1);
 }
 
