@@ -23,17 +23,14 @@ body{
     font-family: "Passion One";
     -webkit-background-clip: text;
     margin: 0;
-    background: white;
+    background: linear-gradient(white,#3e447b, white, #5e8dc5, white);
 }
 .navbar{
     background:  linear-gradient(#3e447b, rgba(0, 0, 0, 0.5)),
 				url(img/golden-gate-view-photo.jpg) right top / cover;
                 background-position: center 52%;
     background-repeat: no-repeat;
-    height: 670px;
-    width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 730px;
 }
 nav{
     display: flex;
@@ -41,7 +38,7 @@ nav{
     align-items: center;
     background-repeat: no-repeat;
     padding: 27px;
-    background: white;
+    background: linear-gradient(black,rgb(62, 68, 123, 0.8));
 }
 nav ul{
     padding-right: 50px;
@@ -124,14 +121,7 @@ hr{
 }
 
 
-.grid{
-    display: grid;
-    justify-items: center;
-    gap: 100px;
-    grid-template-columns: repeat(2, 1fr);
-    height: 100%;
-    max-width: 1400px;
-}
+
 
 
 .goldengate{
@@ -140,18 +130,18 @@ hr{
     background-size: cover;
     width: 480px;
     height: 500px;
-    text-align: center;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
-}
-.gate{
     display: flex;
     justify-content: center;
-    text-align: center;
-    background: linear-gradient(#CF453B, rgba(255, 0, 0, 0.2));
+}
+.gate{
     border-radius: 30px 30px 0px 0px;
     font-family: "Jersey 15", serif;
     font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    color: white;
 }
 .goldengate:hover{
     transform: scale(1.1);
@@ -166,17 +156,18 @@ hr{
     background-size: cover;
     width: 480px;
     height: 500px;
-    text-align: center;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    justify-content: center;
 }
 .traz{
     display: flex;
-    justify-content: center;
-    background: linear-gradient(#00693E, rgba(255, 255, 255, 0.2));
+    align-items: center;
     border-radius: 30px 30px 0px 0px;
     font-family: "Jersey 15", serif;
     font-size: 1.2em;
+    color: white;
 }
 .alcatraz:hover{
     transform: scale(1.1);
@@ -195,15 +186,17 @@ hr{
     height: 500px;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    justify-content: center;
 }
 .tower{
     display: flex;
-    justify-content: center;
+    align-items: center;
     text-align: center;
-    background: linear-gradient(#FFFF00 , rgba(255, 0, 0, 0.2));
     border-radius: 30px 30px 0px 0px;
     font-family: "Jersey 15", serif;
     font-size: 1.2em;
+    color: white;
 }
 .coit:hover{
     transform: scale(1.1);
@@ -221,14 +214,16 @@ hr{
     text-align: center;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    justify-content: center;
 }
 .ladies{
     display: flex;
-    justify-content: center;
-    background: linear-gradient(#ACE1AF, rgb(255,182,193, 0.2));
+    align-items: center;
     border-radius: 30px 30px 0px 0px;
     font-family: "Jersey 15", serif;
     font-size: 1.2em;
+    color: white;
 }
 .painted-ladies:hover{
     transform: scale(1.1);
@@ -245,15 +240,17 @@ hr{
     height: 500px;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    justify-content: center;
 }
 .street{
     display: flex;
-    justify-content: center;
+    align-items: center;
     text-align: center;
-    background: linear-gradient( brown , rgba(81, 255, 0, 0.4));
     border-radius: 30px 30px 0px 0px;
     font-family: "Jersey 15", serif;
     font-size: 1.2em;
+    color: #fff;
 }
 
 .lombard:hover{
@@ -270,17 +267,18 @@ hr{
     background-size: cover;
     width: 480px;
     height: 500px;
-    text-align: center;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    justify-content: center;
 }
 .palace{
     display: flex;
-    justify-content: center;
-    background: linear-gradient(rgb(255,79,0), rgba(255,248,220, 0.2));
+    align-items: center;
     border-radius: 30px 30px 0px 0px;
     font-family: "Jersey 15", serif;
     font-size: 1.2em;
+    color: #fff;
 }
 .palace-of-arts:hover{
     transform: scale(1.1);
@@ -298,14 +296,16 @@ hr{
     text-align: center;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    justify-content: center;
 }
 .twin{
     display: flex;
-    justify-content: center;
-    background: linear-gradient(rgb(124, 107, 100), rgba(255,248,220, 0.2));
+    align-items: center;
     border-radius: 30px 30px 0px 0px;
     font-family: "Jersey 15", serif;
     font-size: 1.2em;
+    color: #fff;
 }
 .twin-peaks:hover{
     transform: scale(1.1);
@@ -319,17 +319,18 @@ hr{
     background-size: cover;
     width: 480px;
     height: 500px;
-    text-align: center;
     border-radius: 30px;
     transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    justify-content: center;
 }
 .park{
     display: flex;
-    justify-content: center;
-    background: linear-gradient(rgb(146, 76, 45), rgba(255,248,220, 0.2));
+    align-items: center;
     border-radius: 30px 30px 0px 0px;
     font-family: "Jersey 15", serif;
     font-size: 1.2em;
+    color: #fff;
 }
 .oracle-park:hover{
     transform: scale(1.1);
