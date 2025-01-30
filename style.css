@@ -26,7 +26,7 @@ body{
     background: linear-gradient(white);
 }
 .navbar{
-    background:  linear-gradient(black, rgba(0, 0, 0, 0.3)),
+    background:  linear-gradient(gray, rgba(0, 0, 0, 0.3)),
 				url(img/cover-photo.jpg) right top / cover;
                 background-position: center 52%;
     background-repeat: no-repeat;
@@ -46,11 +46,11 @@ nav ul{
 nav li{
     display: inline-block;
     margin-right: 35px;
-    font-size: 23px;
+    font-size: 20px;
 }
 #sf{
     align-self: center;
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin: 15px;
     color: white;
     font-family: "Jersey 15", serif;
@@ -62,8 +62,8 @@ a{
     color: white;
     transition: all .5s;
 }
-a:hover, 
-a:focus {
+nav li a:hover, 
+nav li a:focus {
     color:#769ed1;
 }
 header{
@@ -533,6 +533,10 @@ footer li{
 footer a{
     color: white;
 }
+footer a:hover,
+footer a:focus{
+    color: #769ed1;
+}
 .linked-in{
     background-size: 100px;
     width: 40px;
@@ -558,5 +562,130 @@ footer a{
 }
 
 
+@media screen and (max-width:1360px){
+    .grid-parent{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    max-width: 900px;
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
 
-   
+@media  screen and (max-width:900px) {
+    .grid-parent{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        max-width: 500px;
+        padding-top: 40px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 40px;
+        margin-right: auto;
+        margin-left: auto;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 40px;
+        }
+}
+
+@media  screen and (max-width:400px) {
+    .grid-parent{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        max-width: 300px;
+        padding-top: 40px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 40px;
+        margin-right: auto;
+        margin-left: auto;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 40px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-repeat: no-repeat;
+            padding: 27px;
+            background: linear-gradient(black, rgb(0, 0, 0, 0.3));
+        }
+        .ghirardelli-square{
+            background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/Ghirardelli-Square.jpg) right top / cover;
+            background-position: center;
+            background-size: cover;
+            width: 280px;
+            height: 300px;
+            transition: transform .5s, filter 1s ease-in-out;
+            display: flex;
+            justify-content: center;
+        }
+        .ghirardelli{
+            display: flex;
+            align-items: center;
+            border-radius: 30px 30px 0px 0px;
+            font-family: "Jersey 15", serif;
+            font-size: 1em;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .pier-39{
+            background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/pier-39.jpg) right top / cover;
+            background-position: center;
+            background-size: cover;
+            width: 280px;
+            height: 300px;
+            transition: transform .5s, filter 1s ease-in-out;
+            display: flex;
+            justify-content: center;
+        }
+        .pier{
+            display: flex;
+            align-items: center;
+            border-radius: 30px 30px 0px 0px;
+            font-family: "Jersey 15", serif;
+            font-size: 1em;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .sciences-academy{
+            background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/sciences-academy.jpg) right top / cover;
+            background-position: center;
+            background-size: cover;
+            width: 280px;
+            height: 300px;
+            transition: transform .5s, filter 1s ease-in-out;
+            display: flex;
+            justify-content: center;
+        }
+        .academy{
+            display: flex;
+            align-items: center;
+            border-radius: 30px 30px 0px 0px;
+            font-family: "Jersey 15", serif;
+            font-size: 1em;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .sciences-academy:hover{
+            transform: scale(1.1);
+        }
+}
