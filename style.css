@@ -26,7 +26,7 @@ body{
     background: linear-gradient(white);
 }
 .navbar{
-    background:  linear-gradient(gray, rgba(0, 0, 0, 0.3)),
+    background:  linear-gradient(gray, rgba(0, 0, 0, 0.4)),
 				url(img/cover-photo.jpg) right top / cover;
                 background-position: center 52%;
     background-repeat: no-repeat;
@@ -92,16 +92,16 @@ h1 {
     font-family: "Teko", serif;
 }
 .catch{
-    font-size: 28px;
+    font-size: 29px;
     color: white;
     font-family: "Teko", serif;
 }
 button{
-    background: gray;
+    background: transparent;
     width: 150px;
     height: 50px;
     border-radius: 50px;
-    border: 4px solid black;
+    border: 4px solid white;
     font-family: "Teko", serif;
     font-size: 21px;
     font-weight: 600;
@@ -535,19 +535,23 @@ h2{
 
 footer{
     color: black;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 20px;
     background-color: gray;
     padding: 50px;
+    padding-bottom: 15px;
 }
 footer li{
-    display: inline-block;
+    list-style-type: none;
     font-size: 1.3em;
     margin-right: 15px;
     max-width: 1300px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    margin: 40px;
 }
 footer a{
     color: white;
@@ -556,8 +560,27 @@ footer a:hover,
 footer a:focus{
     color: #769ed1;
 }
+.media{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.media a{
+    padding: 7px;
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+footer hr{
+    width: 100%;
+}
 .linked-in{
-    background-size: 100px;
+    background-size: 100%;
     width: 40px;
     height: 40px;
 }
