@@ -27,17 +27,6 @@ body{
 }
 
 /*NAVBAR/HEADER*/
-header{
-    text-align: center;
-	color: #fff;
-    background-size: cover;
-    background:  linear-gradient(rgb(80, 157, 170), rgba(0, 0, 0, 0.5)),
-				url(img/cover-photo.jpg) right top / cover;
-                background-position: center 30%;
-    background-repeat: no-repeat;
-    height: 600px;
-    padding-top: 180px;
-}
 nav{
     display: flex;
     justify-content: space-between;
@@ -72,44 +61,58 @@ nav li:hover{
     box-shadow: inset 200px 0 0 0 gray;
 }
 main{
-    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px;
     border-radius: 10px;
     gap: 80px;
 }
+
+
+/*BODY*/
+img{
+    width: 200px;
+}
+.title{
+    text-align: center;
+    max-width: 1400px;
+    margin-top: 180px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 600px;
+    border-radius: 30px;
+    background-color: bisque;
+}
 h1 {
     text-align: center;
-    font-size: 90px;
-    color: white;
+    font-size: 100px;
+    color: black;
     font-family: 'Bebas Neue';
+    padding-top: 150px;
 }
-header p{
-    font-size: 29px;
-    color: white;
-    font-family: "Jersey 15", serif;
-    text-transform: uppercase;
+#title{
+    font-size: 1.4em;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
 }
 button{
     background: transparent;
     width: 150px;
     height: 50px;
     border-radius: 50px;
-    border: 4px solid white;
+    border: 4px solid black;
     font-family: "Teko", serif;
     font-size: 22px;
     font-weight: 600;
-    color: black;
     transition: all .5s;
 }
 button:hover,
 button:focus{
     background-color: black;
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgb(80, 157, 170), .125rem .125rem 1rem rgb(80, 157, 170)
+    border: 4px solid white;
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgb(255, 0, 0), .125rem .125rem 1rem rgb(255, 0, 0);
 }
-
-/*BODY*/
 .explore {
     max-width: 1100px;
     margin: 70px;
@@ -118,8 +121,9 @@ button:focus{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    background: linear-gradient(132deg, rgb(241, 242, 11) 0.00%, rgb(248, 161, 27) 100.00%);
+    background: linear-gradient(132deg, gray 0.00%, rgb(248, 161, 27) 100.00%);
     border-radius: 100% 0% 100% 0% / 100% 100% 0% 0%; 
+    color: white;
 }
 #explore{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(img/beach.jpg)right top / cover;
@@ -137,32 +141,13 @@ button:focus{
     align-items: center;
 }
 
-section p{
+section p {
     width: 520px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     padding-left: 30px;
-}
-
-/*GRID*/
-.grid-parent{
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    max-width: 1350px;
-    padding-top: 40px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 40px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.grid{
-    max-width: 1400px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    font-weight: 600;
 }
 
 
@@ -170,30 +155,33 @@ section p{
 h3{
     border-radius: 30px 30px 0px 0px;
     font-family: "Jersey 15", serif;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: white;
     align-content: center;
 }
 
 /*VIEW SECTION*/
-.grid-views{
-    max-width: 1400px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    margin-left: auto;
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+.view{
     padding: 30px;
-    margin: 20px;
+    max-width: 100%;
+    background-color: bisque;
+}
+.grid-views{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-left: auto;
+    margin-left: auto;
+    margin: 50px;
 }
 H2{
     text-align: center;
-    font-family: "Jersey 15", serif;
+    font-family: 'Bebas Neue';
     font-size: 2.6em;
+    font-weight: 900;
+}
+.view p{
+    text-align: center;
 }
 .twin-peaks{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/twin-peaks-photo.jpg) right top / cover;
@@ -206,6 +194,7 @@ H2{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 .twin-peaks:hover{
     transform: scale(1.1);
@@ -221,6 +210,7 @@ H2{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 .coit:hover{
     transform: scale(1.1);
@@ -236,6 +226,7 @@ H2{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 .vista-point:hover{
     transform: scale(1.1);
@@ -251,6 +242,7 @@ H2{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 .mission-dolores:hover{
     transform: scale(1.1);
@@ -265,7 +257,8 @@ H2{
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    border-radius: 20px;
 }
 .grand-view:hover{
     transform: scale(1.1);
@@ -281,12 +274,23 @@ H2{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 .corona-heights:hover{
     transform: scale(1.1);
 }
 
-/*COOL PLACES*/
+/*FAMOUS SECTION*/
+.grid-famous{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+}
 .goldengate{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/golden-gate-photo.jpg) right top / cover;
     background-position: center;
@@ -299,22 +303,6 @@ H2{
     justify-content: center;
 }
 .goldengate:hover{
-    transform: scale(1.1);
-}
-
-.chase-center{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/chase-center.jpg);
-    background-position: center 75%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 450px;
-    height: 450px;
-    transition: transform .5s, filter 1s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.chase-center:hover{
     transform: scale(1.1);
 }
 
@@ -350,10 +338,11 @@ H2{
     transform: scale(1.1);
 }
 
-.palace-of-arts{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/palace-of-arts-photo.jpg) right top / cover;
-    background-position: center;
+.muir-woods{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/muir-woods.jpg) right top / cover;
+    background-position: center 75%;
     background-size: cover;
+    background-repeat: no-repeat;
     width: 450px;
     height: 450px;
     transition: transform .5s, filter 1s ease-in-out;
@@ -361,7 +350,7 @@ H2{
     align-items: center;
     justify-content: center;
 }
-.palace-of-arts:hover{
+.muir-woods:hover{
     transform: scale(1.1);
 }
 
@@ -377,6 +366,39 @@ H2{
     justify-content: center;
 }
 .alcatraz:hover{
+    transform: scale(1.1);
+}
+
+
+/*SPORTS*/
+.chase-center{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/chase-center.jpg);
+    background-position: center 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+    transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chase-center:hover{
+    transform: scale(1.1);
+}
+
+.palace-of-arts{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/palace-of-arts-photo.jpg) right top / cover;
+    background-position: center;
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+    transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.palace-of-arts:hover{
     transform: scale(1.1);
 }
 
