@@ -24,16 +24,19 @@ body{
     font-family: "Passion One";
     -webkit-background-clip: text;
     margin: 0;
-    background: linear-gradient(white);
 }
 
 /*NAVBAR/HEADER*/
-.navbar{
-    background:  linear-gradient(gray, rgba(0, 0, 0, 0.4)),
+header{
+    text-align: center;
+	color: #fff;
+    background-size: cover;
+    background:  linear-gradient(rgb(80, 157, 170), rgba(0, 0, 0, 0.5)),
 				url(img/cover-photo.jpg) right top / cover;
-                background-position: center 52%;
+                background-position: center 30%;
     background-repeat: no-repeat;
-    height: 750px;
+    height: 600px;
+    padding-top: 180px;
 }
 nav{
     display: flex;
@@ -41,12 +44,11 @@ nav{
     align-items: center;
     background-repeat: no-repeat;
     background: linear-gradient(black, rgb(0, 0, 0, 0.3));
-    position: fixed;
     width: 100%;
+    position: fixed;
+    top: 0;
 }
-nav ul{
-    padding-right: 40px;
-}
+
 nav li{
     display: inline-block;
     font-size: 20px;
@@ -69,15 +71,6 @@ a{
 nav li:hover{
     box-shadow: inset 200px 0 0 0 gray;
 }
-header{
-    text-align: center;
-    padding: 14%;
-	color: #fff;
-    background-size: cover;
-    margin-bottom: 30px;
-}
-
-/*BODY*/
 main{
     max-width: 1400px;
     margin-left: auto;
@@ -92,10 +85,11 @@ h1 {
     color: white;
     font-family: 'Bebas Neue';
 }
-.catch{
+header p{
     font-size: 29px;
     color: white;
-    font-family: "Teko", serif;
+    font-family: "Jersey 15", serif;
+    text-transform: uppercase;
 }
 button{
     background: transparent;
@@ -111,9 +105,11 @@ button{
 }
 button:hover,
 button:focus{
-    background: gray;
+    background-color: black;
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgb(80, 157, 170), .125rem .125rem 1rem rgb(80, 157, 170)
 }
 
+/*BODY*/
 .explore {
     max-width: 1100px;
     margin: 70px;
@@ -122,22 +118,26 @@ button:focus{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    background: linear-gradient(132deg, rgb(241, 242, 11) 0.00%, rgb(248, 161, 27) 100.00%);
+    border-radius: 100% 0% 100% 0% / 100% 100% 0% 0%; 
 }
-h2{
+#explore{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(img/beach.jpg)right top / cover;
-    font-family: "Teko", serif;
-    text-align: center;
+    font-family: "Jersey 15", serif;
     color: white;
     padding: 40px;
-    font-size: 2.2em;
-    max-width: 450px;
-    height: 150px;
-    display: flex;
-    align-items: center;
+    font-size: 2.1em;
+    max-width: 300px;
+    height: 290px;
     border-radius: 50%;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bridge{
+section p{
     width: 520px;
     font-size: 1.2em;
     text-align: center;
@@ -167,23 +167,136 @@ h2{
 
 
 /*GRID SECTION*/
-.goldengate{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/golden-gate-photo.jpg) right top / cover;
-    background-position: center;
-    background-size: cover;
-    width: 400px;
-    height: 400px;
-    transition: transform .5s, filter 1s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 h3{
     border-radius: 30px 30px 0px 0px;
     font-family: "Jersey 15", serif;
     font-size: 1.2em;
     color: white;
     align-content: center;
+}
+
+/*VIEW SECTION*/
+.grid-views{
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-left: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    margin: 20px;
+}
+H2{
+    text-align: center;
+    font-family: "Jersey 15", serif;
+    font-size: 2.6em;
+}
+.twin-peaks{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/twin-peaks-photo.jpg) right top / cover;
+    background-position: center;
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.twin-peaks:hover{
+    transform: scale(1.1);
+}
+.coit{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/coit-photo.jpg) right top / cover;
+    background-position: center 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+    transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coit:hover{
+    transform: scale(1.1);
+}
+.vista-point{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/vista-point.jpg) right top / cover;
+    background-position: center 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+    transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vista-point:hover{
+    transform: scale(1.1);
+}
+.mission-dolores{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/mission-dolores-park.jpg) right top / cover;
+    background-position: center 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+    transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mission-dolores:hover{
+    transform: scale(1.1);
+}
+.grand-view{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/grandview-park.jpg) right top / cover;
+    background-position: center 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+    transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grand-view:hover{
+    transform: scale(1.1);
+}
+.corona-heights{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/corona-heights.jpg) right top / cover;
+    background-position: center 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+    transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.corona-heights:hover{
+    transform: scale(1.1);
+}
+
+/*COOL PLACES*/
+.goldengate{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/golden-gate-photo.jpg) right top / cover;
+    background-position: center;
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+    transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .goldengate:hover{
     transform: scale(1.1);
@@ -194,8 +307,8 @@ h3{
     background-position: center 75%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -205,28 +318,12 @@ h3{
     transform: scale(1.1);
 }
 
-.coit{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/coit-photo.jpg) right top / cover;
-    background-position: center 75%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 400px;
-    transition: transform .5s, filter 1s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.coit:hover{
-    transform: scale(1.1);
-}
-
 .painted-ladies{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/painted-ladies-photo.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     text-align: center;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
@@ -242,8 +339,8 @@ h3{
     background-position: center 75%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -257,8 +354,8 @@ h3{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/palace-of-arts-photo.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -272,8 +369,8 @@ h3{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/alcatraz-photo.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -283,28 +380,12 @@ h3{
     transform: scale(1.1);
 }
 
-.twin-peaks{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/twin-peaks-photo.jpg) right top / cover;
-    background-position: center;
-    background-size: cover;
-    width: 400px;
-    height: 400px;
-    text-align: center;
-    transition: transform .5s, filter 1s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.twin-peaks:hover{
-    transform: scale(1.1);
-}
-
 .oracle-park{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/giants-oracle-photo.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -318,8 +399,8 @@ h3{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/zoo-sf.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -333,8 +414,8 @@ h3{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/baker-beach.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -348,8 +429,8 @@ h3{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/city-hall.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -363,8 +444,8 @@ h3{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/sciences-academy.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -378,8 +459,8 @@ h3{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/pier-39.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -393,8 +474,8 @@ h3{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/Ghirardelli-Square.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -453,23 +534,4 @@ footer p{
 }
 footer hr{
     width: 100%;
-}
-.linked-in{
-    width: 30px;
-    height: 30px;
-    border: 1px solid red;
-}
-.linked-in:hover{
-    background-color: #0072b1;
-}
-
-.git-hub{
-    border-radius: 30px;
-}
-.git-hub:hover,
-.git-hub:focus{
-    background-color: white;
-    width: 35px;
-    height: 35px;
-    border-radius: 30px;
 }
