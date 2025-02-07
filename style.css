@@ -24,6 +24,8 @@ body{
     font-family: "Passion One";
     -webkit-background-clip: text;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*NAVBAR/HEADER*/
@@ -31,8 +33,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-repeat: no-repeat;
-    background: linear-gradient(black, rgb(0, 0, 0, 0.3));
+    background: linear-gradient(black, rgb(0,0,0,0.2));
     width: 100%;
     position: fixed;
     top: 0;
@@ -46,7 +47,7 @@ nav li{
 }
 #sf{
     align-self: center;
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin: 15px;
     color: white;
     font-family: "Jersey 15", serif;
@@ -55,7 +56,7 @@ nav li{
 a{
     font-family: "Jersey 15", serif;
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
 }
 nav li:hover{
     box-shadow: inset 200px 0 0 0 gray;
@@ -68,33 +69,54 @@ main{
     gap: 80px;
 }
 
-
 /*BODY*/
 img{
     width: 200px;
 }
 .title{
     text-align: center;
-    max-width: 1400px;
     margin-top: 180px;
     margin-right: auto;
     margin-left: auto;
     height: 600px;
     border-radius: 30px;
-    background-color: bisque;
+    background: rgb(0,0,0,0.5);
 }
+.container{
+    animation: animate 90s ease infinite;
+    background-size: cover;
+    max-width: 1400px;
+    border-radius: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@keyframes animate{
+    0%,100%{
+        background-image: url(img/1.page.jpg);
+    }
+    25% {
+        background-image: url(img/2.page.jpg);
+    }
+    50% {
+        background-image: url(img/3.page.jpg);
+    }
+    75% {
+        background-image: url(img/4.page.jpg);
+    }
+}
+
 h1 {
-    text-align: center;
     font-size: 100px;
-    color: black;
+    color: whitesmoke;
     font-family: 'Bebas Neue';
     padding-top: 150px;
 }
 #title{
     font-size: 1.4em;
-    text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: 900;
+    color: whitesmoke;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 button{
     background: transparent;
@@ -139,9 +161,10 @@ button:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 520px;
 }
 
-section p {
+#great-news {
     width: 520px;
     font-size: 1.1em;
     text-align: center;
@@ -160,25 +183,25 @@ h3{
     align-content: center;
 }
 
+
+
 /*VIEW SECTION*/
 .view{
     padding: 30px;
-    max-width: 100%;
-    background-color: bisque;
+    background-color: whitesmoke;
 }
 .grid-views{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    margin-left: auto;
-    margin-left: auto;
     margin: 50px;
+    display: flex;
 }
 H2{
     text-align: center;
     font-family: 'Bebas Neue';
     font-size: 2.6em;
-    font-weight: 900;
+    padding: 10px;
 }
 .view p{
     text-align: center;
@@ -280,13 +303,18 @@ H2{
     transform: scale(1.1);
 }
 
+
+
 /*FAMOUS SECTION*/
+.famous{
+    margin: 100px;
+}
 .grid-famous{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1400px;
@@ -295,12 +323,13 @@ H2{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/golden-gate-photo.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 450px;
-    height: 450px;
+    width: 550px;
+    height: 350px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 .goldengate:hover{
     transform: scale(1.1);
@@ -310,13 +339,14 @@ H2{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/painted-ladies-photo.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 450px;
-    height: 450px;
+    width: 550px;
+    height: 350px;
     text-align: center;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 .painted-ladies:hover{
     transform: scale(1.1);
@@ -327,12 +357,13 @@ H2{
     background-position: center 75%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 450px;
-    height: 450px;
+    width: 550px;
+    height: 350px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 .lombard:hover{
     transform: scale(1.1);
@@ -343,12 +374,13 @@ H2{
     background-position: center 75%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 450px;
-    height: 450px;
+    width: 550px;
+    height: 350px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 .muir-woods:hover{
     transform: scale(1.1);
@@ -358,12 +390,13 @@ H2{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/alcatraz-photo.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 450px;
-    height: 450px;
+    width: 550px;
+    height: 350px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 .alcatraz:hover{
     transform: scale(1.1);
@@ -371,13 +404,44 @@ H2{
 
 
 /*SPORTS*/
+.sports{
+    background: black;
+    padding: 100px;
+    color: white;
+}
+.warriors{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.niners{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.giants{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .chase-center{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/chase-center.jpg);
     background-position: center 75%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -385,6 +449,42 @@ H2{
 }
 .chase-center:hover{
     transform: scale(1.1);
+}
+
+.levis-stadium{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/levis-stadium.jpg) right top / cover;
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.levis-stadium:hover{
+    transform: scale(1.1);
+}
+
+.oracle-park{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/giants-oracle-photo.jpg) right top / cover;
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    transition: transform .5s, filter 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.oracle-park:hover{
+    transform: scale(1.1);
+}
+/*FUN SECTION*/
+.fun{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
+    grid-auto-flow: dense;
 }
 
 .palace-of-arts{
@@ -401,22 +501,6 @@ H2{
 .palace-of-arts:hover{
     transform: scale(1.1);
 }
-
-.oracle-park{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/giants-oracle-photo.jpg) right top / cover;
-    background-position: center;
-    background-size: cover;
-    width: 450px;
-    height: 450px;
-    transition: transform .5s, filter 1s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.oracle-park:hover{
-    transform: scale(1.1);
-}
-
 .zoo{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/zoo-sf.jpg) right top / cover;
     background-position: center;
