@@ -36,7 +36,6 @@ nav{
     background: linear-gradient(black, rgb(0,0,0,0.2));
     width: 100%;
     position: fixed;
-    top: 0;
 }
 
 nav li{
@@ -44,6 +43,9 @@ nav li{
     font-size: 20px;
     padding: 20px 35px;
     transition: all .9s;
+}
+nav ul{
+    margin-right: 15px;
 }
 #sf{
     align-self: center;
@@ -54,7 +56,8 @@ nav li{
     padding-left: 50px;
 }
 a{
-    font-family: "Jersey 15", serif;
+    font-size: 16px;
+    font-family: "Montserrat", serif;
     text-decoration: none;
     color: whitesmoke;
 }
@@ -70,23 +73,17 @@ main{
 }
 
 /*BODY*/
-img{
-    width: 200px;
-}
+
 .title{
     text-align: center;
-    margin-top: 180px;
     margin-right: auto;
     margin-left: auto;
-    height: 600px;
-    border-radius: 30px;
+    height: 920px;
     background: rgb(0,0,0,0.5);
 }
 .container{
-    animation: animate 90s ease infinite;
+    animation: animate 50s infinite;
     background-size: cover;
-    max-width: 1400px;
-    border-radius: 30px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -103,37 +100,39 @@ img{
     75% {
         background-image: url(img/4.page.jpg);
     }
+    100% {
+        background-image: url(img/5.page.jpg);
+    }
 }
 
 h1 {
     font-size: 100px;
     color: whitesmoke;
     font-family: 'Bebas Neue';
-    padding-top: 150px;
+    padding-top: 18%;
+    margin-top: 0;
 }
 #title{
     font-size: 1.4em;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'oswald';
     color: whitesmoke;
     font-weight: 800;
     text-transform: uppercase;
+    padding-bottom: 10px;
 }
 button{
     background: transparent;
     width: 150px;
-    height: 50px;
-    border-radius: 50px;
-    border: 4px solid black;
-    font-family: "Teko", serif;
-    font-size: 22px;
+    height: 55px;
+    border-radius: 1px;
+    border: 2px solid white;
     font-weight: 600;
-    transition: all .5s;
+    transition: all .3s;
 }
 button:hover,
 button:focus{
+    border: 4px solid black;
     background-color: black;
-    border: 4px solid white;
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgb(255, 0, 0), .125rem .125rem 1rem rgb(255, 0, 0);
 }
 .explore {
     max-width: 1100px;
@@ -166,9 +165,9 @@ button:focus{
 
 #great-news {
     width: 520px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: "Montserrat", serif;
     padding-left: 30px;
     font-weight: 600;
 }
@@ -177,10 +176,11 @@ button:focus{
 /*GRID SECTION*/
 h3{
     border-radius: 30px 30px 0px 0px;
-    font-family: "Jersey 15", serif;
-    font-size: 1.5em;
+    font-family: "oswald";
+    font-size: 1.3em;
     color: white;
     align-content: center;
+    margin: 5px;
 }
 
 
@@ -195,112 +195,96 @@ h3{
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     margin: 50px;
-    display: flex;
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 H2{
     text-align: center;
     font-family: 'Bebas Neue';
-    font-size: 2.6em;
+    font-size: 2.4em;
     padding: 10px;
+    max-width: 1200px;
 }
-.view p{
-    text-align: center;
+.view a{
+    font-size: 14px;
+    font-family: "Montserrat", serif;
+    display: flex;
+    margin-bottom: 30px;
+}
+.view a:hover,
+.view a:focus{
+    color:bisque;
 }
 .twin-peaks{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/twin-peaks-photo.jpg) right top / cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/twin-peaks-photo.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 450px;
-    height: 450px;
-    text-align: center;
-    transition: transform .5s, filter 1s ease-in-out;
+    width: 380px;
+    height: 420px;
     display: flex;
-    align-items: center;
+    align-items:flex-end;
     justify-content: center;
-    border-radius: 20px;
-}
-.twin-peaks:hover{
-    transform: scale(1.1);
 }
 .coit{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/coit-photo.jpg) right top / cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/coit-photo.jpg) right top / cover;
     background-position: center 75%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 450px;
-    height: 450px;
-    transition: transform .5s, filter 1s ease-in-out;
+    width: 380px;
+    height: 420px;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-}
-.coit:hover{
-    transform: scale(1.1);
 }
 .vista-point{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/vista-point.jpg) right top / cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/vista-point.jpg) right top / cover;
     background-position: center 75%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 450px;
-    height: 450px;
-    transition: transform .5s, filter 1s ease-in-out;
+    width: 380px;
+    height: 420px;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-}
-.vista-point:hover{
-    transform: scale(1.1);
 }
 .mission-dolores{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/mission-dolores-park.jpg) right top / cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/mission-dolores-park.jpg) right top / cover;
     background-position: center 75%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 450px;
-    height: 450px;
-    transition: transform .5s, filter 1s ease-in-out;
+    width: 380px;
+    height: 420px;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-}
-.mission-dolores:hover{
-    transform: scale(1.1);
 }
 .grand-view{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/grandview-park.jpg) right top / cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/grandview-park.jpg) right top / cover;
     background-position: center 75%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 450px;
-    height: 450px;
-    transition: transform .5s, filter 1s ease-in-out;
+    width: 380px;
+    height: 420px;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center; 
-    border-radius: 20px;
-}
-.grand-view:hover{
-    transform: scale(1.1);
 }
 .corona-heights{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/corona-heights.jpg) right top / cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/corona-heights.jpg) right top / cover;
     background-position: center 75%;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 450px;
-    height: 450px;
-    transition: transform .5s, filter 1s ease-in-out;
+    width: 380px;
+    height: 420px;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-}
-.corona-heights:hover{
-    transform: scale(1.1);
 }
 
 
@@ -406,7 +390,7 @@ H2{
 /*SPORTS*/
 .sports{
     background: black;
-    padding: 100px;
+    padding: 80px;
     color: white;
 }
 .warriors{
@@ -416,6 +400,7 @@ H2{
     align-items: center;
     margin-right: auto;
     margin-left: auto;
+    margin: 40px;
 }
 .niners{
     text-align: center;
@@ -425,6 +410,7 @@ H2{
     max-width: 1400px;
     margin-right: auto;
     margin-left: auto;
+    margin: 40px;
 }
 .giants{
     text-align: center;
@@ -434,6 +420,7 @@ H2{
     max-width: 1400px;
     margin-right: auto;
     margin-left: auto;
+    margin: 40px;
 }
 .chase-center{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/chase-center.jpg);
@@ -479,6 +466,9 @@ H2{
 }
 .oracle-park:hover{
     transform: scale(1.1);
+}
+.sports img{
+    width: 200px;
 }
 /*FUN SECTION*/
 .fun{
@@ -597,7 +587,7 @@ H2{
 footer{
     color: black;
     margin-top: 20px;
-    background-color: gray;
+    background-color: lightslategray;
     padding: 50px;
     padding-bottom: 15px;
 }
