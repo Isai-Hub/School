@@ -203,7 +203,7 @@ h3{
 H2{
     text-align: center;
     font-family: 'Bebas Neue';
-    font-size: 2.4em;
+    font-size: 2.6em;
     padding: 10px;
     max-width: 1200px;
 }
@@ -425,11 +425,12 @@ H2{
     text-align: center;
 }
 
+
 /*FUN SECTION*/
 .fun{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
-    grid-auto-flow: dense;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: column-reverse;
 }
 
 .palace-of-arts{
@@ -522,18 +523,14 @@ H2{
 }
 
 .ghirardelli-square{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/Ghirardelli-Square.jpg) right top / cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(img/Ghirardelli-Square.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 450px;
-    height: 450px;
-    transition: transform .5s, filter 1s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.ghirardelli-square:hover{
-    transform: scale(1.1);
+    width: 950px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
 }
 
 
