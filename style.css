@@ -427,18 +427,35 @@ H2{
 
 
 /*FUN SECTION*/
+.family-time{
+    padding: 60px;
+}
 .fun{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    flex-direction: column-reverse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1260px;
+    gap: 20px;
+}
+.ghirardelli-square{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(img/Ghirardelli-Square.jpg) right top / cover;
+    background-position: center 10%;
+    background-size: cover;
+    width: 1260px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    margin-bottom: 30px;
 }
 
 .palace-of-arts{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/palace-of-arts-photo.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -451,8 +468,8 @@ H2{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/zoo-sf.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -466,8 +483,8 @@ H2{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/baker-beach.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -481,8 +498,8 @@ H2{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/city-hall.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -496,8 +513,8 @@ H2{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/sciences-academy.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -511,8 +528,8 @@ H2{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/pier-39.jpg) right top / cover;
     background-position: center;
     background-size: cover;
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     transition: transform .5s, filter 1s ease-in-out;
     display: flex;
     align-items: center;
@@ -520,17 +537,6 @@ H2{
 }
 .pier-39:hover{
     transform: scale(1.1);
-}
-
-.ghirardelli-square{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(img/Ghirardelli-Square.jpg) right top / cover;
-    background-position: center;
-    background-size: cover;
-    width: 950px;
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 12px;
 }
 
 
