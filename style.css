@@ -33,9 +33,10 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(black, rgb(0,0,0,0.2));
+    background: whitesmoke;
     width: 100%;
     position: fixed;
+    box-shadow: 0 0 0 10px #A03232;
 }
 
 nav li{
@@ -51,7 +52,7 @@ nav ul{
     align-self: center;
     font-size: 1.7em;
     margin: 15px;
-    color: white;
+    color: black;
     font-family: "Jersey 15", serif;
     padding-left: 50px;
 }
@@ -59,15 +60,15 @@ a{
     font-size: 16px;
     font-family: "Montserrat", serif;
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
 }
-nav li:hover{
+nav li:hover,
+nav li:focus{
     box-shadow: inset 200px 0 0 0 gray;
 }
 main{
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 50px;
     border-radius: 10px;
     gap: 80px;
 }
@@ -131,18 +132,18 @@ button{
 }
 button:hover,
 button:focus{
-    border: 4px solid black;
-    background-color: black;
+    border: 4px solid white;
+    background-color: white;
 }
 .explore {
-    max-width: 1100px;
-    margin: 130px;
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     color: white;
+    background-color: whitesmoke;
 }
 #explore{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/cityhall.jpg)right top / cover;
@@ -210,15 +211,18 @@ H2{
     font-size: 2.7em;
     padding: 10px;
     max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .view p{
-    max-width: 900px;
-    margin-left: 460px;
+    max-width: 1000px;
     font-size: 1.1em;
     font-family: "Montserrat", serif;
     line-height: 1.7;
     font-weight: 500;
     font-style: italic;
+    margin-right: auto;
+    margin-left: auto;
 }
 .view a{
     font-size: 14px;
@@ -275,7 +279,7 @@ H2{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    order: 6;
+    order: 5;
 }
 .grand-view{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(img/grandview-park.jpg) right top / cover;
@@ -287,7 +291,7 @@ H2{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    order: 5;
+    order: 6;
 }
 .corona-heights{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(img/corona-heights.jpg) right top / cover;
@@ -361,13 +365,9 @@ H2{
 
 /*SPORTS*/
 .sports{
-    background: whitesmoke;
-    background-position: center;
     padding: 60px;
     color: black;
-}
-.sports h2{
-    margin-left: 15.5%;
+    background-color: whitesmoke;
 }
 .stadium{
     display: grid;
@@ -392,7 +392,7 @@ H2{
     font-style: italic;
 }
 #sports-p{
-    max-width: 1100px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.1em;
@@ -437,9 +437,6 @@ H2{
     margin-left: auto;
     margin-right: auto;
 }
-.family-time h2{
-    margin-left: 40px;
-}
 .fun{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -458,8 +455,15 @@ H2{
     border-radius: 12px;
     margin-bottom: 50px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.city-hall h3{
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+    font-weight: 900;
+    margin-right: 30px;
+    margin-top: 20px;
 }
 
 .ghirardelli-square{
@@ -557,7 +561,6 @@ H2{
 /*FOOTER SECTION*/
 footer{
     color: white;
-    margin-top: 20px;
     background-color: #A03232;
     padding: 50px;
     padding-bottom: 15px;
