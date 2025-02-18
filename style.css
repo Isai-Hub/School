@@ -171,7 +171,11 @@ button:focus{
     color: black;
     font-style: italic;
 }
-
+.explore h3{
+    color: black;
+    text-align: center;
+    font-size: 2em;
+}
 
 /*GRID SECTION*/
 h3{
@@ -316,6 +320,7 @@ H2{
     margin-right: auto;
     margin-left: auto;
     margin-top: 7px;
+    margin-bottom: 6px;
 }
 .famous a{
     font-size: 16px;
@@ -440,6 +445,9 @@ H2{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
 }
+.fun a{
+    font-size: 1.3rem;
+}
 .city-hall{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(img/city-hall.jpg) right top / cover;
     background-position: 50% 70%;
@@ -548,9 +556,9 @@ H2{
 
 /*FOOTER SECTION*/
 footer{
-    color: black;
+    color: white;
     margin-top: 20px;
-    background-color: whitesmoke;
+    background-color: #A03232;
     padding: 50px;
     padding-bottom: 15px;
 }
@@ -568,13 +576,13 @@ footer ul{
     margin: 40px;
 }
 footer a{
-    color: black;
+    color: white;
     transition: all .5s;
     font-weight: 600;
 }
 footer a:hover,
 footer a:focus{
-    color: #769ed1;
+    color: #000000;
 }
 .media{
     display: flex;
@@ -590,6 +598,6 @@ footer p{
     padding: 0;
     margin-top: 40px;
     margin-bottom: 0;
-    font-size: 15px;
-    font-family: "Jersey 15", serif;
+    font-size: 9px;
+    font-family: "Montserrat", serif;
 }
