@@ -365,6 +365,7 @@ H2{
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: whitesmoke;
 }
 
 /*SPORTS*/
@@ -449,10 +450,11 @@ H2{
 .family-time a{
     font-size: 1.3rem;
     color: white;
-    transition-duration: 1s
+    font-weight: 800;
 }
-.family-time a:hover{
-    text-decoration: underline;
+ .family-time h3 a:hover,
+ .family-time h3 a:focus{
+    color: gray;
 }
 .city-hall{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(img/city-hall.jpg) right top / cover;
@@ -467,12 +469,10 @@ H2{
     justify-content: center;
     align-items: flex-end;
 }
-.city-hall h3{
-    font-size: 60px;
+.city-hall h3 a{
+    font-size: 55px;
     font-family: 'Bebas Neue';
-    font-weight: 900;
-    margin-right: 30px;
-    margin-top: 20px;
+    font-weight: 600;
 }
 
 .ghirardelli-square{
