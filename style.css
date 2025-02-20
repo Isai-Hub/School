@@ -61,6 +61,7 @@ a{
     font-family: "Montserrat", serif;
     text-decoration: none;
     color: black;
+    font-weight: 500;
 }
 nav li:hover,
 nav li:focus{
@@ -355,7 +356,7 @@ H2{
     width: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
+    gap: 110px;
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
@@ -454,7 +455,7 @@ H2{
 }
  .family-time h3 a:hover,
  .family-time h3 a:focus{
-    color: gray;
+    color:rgb(214, 214, 214);
 }
 .city-hall{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(img/city-hall.jpg) right top / cover;
@@ -594,7 +595,7 @@ footer a{
 }
 footer a:hover,
 footer a:focus{
-    color: #000000;
+    color:rgb(170, 170, 170);
 }
 .media{
     display: flex;
