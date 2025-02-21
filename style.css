@@ -261,34 +261,34 @@ h3{
     text-align: center;
     background-color: whitesmoke;
 }
-.bridge-fact p{
+.facts p{
     margin-top: 30px;
 }
-.bridge-fact img{
-    width: 300px;
+.facts img{
+    width: 400px;
     height: 100%;
     margin-top: 20px;
 }
-.bridge-fact{
+.facts{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 60px;
 }
-.bridge-fact h4{
+.facts h4{
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: 20px;
     font-family: "Montserrat", serif;
 }
-.bridge-fact a{
+.facts a{
     font-size: 16px;
     font-family: "Montserrat", serif;
     margin-bottom: 0;
     color: black;
 }
-.bridge-fact a:hover,
-.bridge-fact a:focus{
+.facts a:hover,
+.facts a:focus{
     text-decoration: underline;
     color: black;
 }
@@ -588,6 +588,10 @@ H2{
 .joke p{
     width: 500px;
     margin: 0%;
+    font-size: 1em;
+    font-family: "Montserrat", serif;
+    line-height: 1.7;
+    font-weight: 500;
 }
 .joke{
     display: flex;
@@ -674,7 +678,7 @@ H2{
     margin-top: 15px;
 }
 .bruce-lee p{
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: "Montserrat", serif;
     line-height: 1.7;
     font-weight: 500;
