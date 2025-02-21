@@ -207,12 +207,97 @@ h3{
 }
 
 
-
+/*FAMOUS SECTION*/
+.famous{
+    margin-top: 50px;
+    padding: 90px;
+    padding-bottom: 40px;
+}
+.famous p{
+    max-width: 1000px;
+    font-size: 1.1em;
+    font-family: "Montserrat", serif;
+    line-height: 1.7;
+    font-weight: 500;
+    font-style: italic;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 7px;
+    margin-bottom: 6px;
+}
+.famous a{
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+    margin-bottom: 20px;
+    color: black;
+}
+.famous a:hover,
+.famous a:focus{
+    color:gray;
+}
+.famous img{
+    width: 450px;
+    height: 305px;
+}
+.famous h3{
+    padding-top: 15px;
+    color: black;
+    font-size: 21px;
+    font-weight: 600;
+}
+.grid-famous{
+    width: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 110px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+}
+.famous-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: whitesmoke;
+}
+.bridge-fact p{
+    margin-top: 30px;
+}
+.bridge-fact img{
+    width: 300px;
+    height: 100%;
+    margin-top: 20px;
+}
+.bridge-fact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.bridge-fact h4{
+    margin-bottom: 0;
+    font-size: 18px;
+    font-family: "Montserrat", serif;
+}
+.bridge-fact a{
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+    margin-bottom: 0;
+    color: black;
+}
+.bridge-fact a:hover,
+.bridge-fact a:focus{
+    text-decoration: underline;
+    color: black;
+}
 /*VIEW SECTION*/
 .view{
     padding: 90px;
     background-color: whitesmoke;
     margin-top: 50px;
+    padding-bottom: 60px;
 }
 .grid-views{
     display: grid;
@@ -323,129 +408,37 @@ H2{
     align-items: center;
     order: 1;
 }
-
-
-
-/*FAMOUS SECTION*/
-.famous{
-    margin-bottom: 80px;
-    margin-top: 50px;
-    padding: 90px;
+.japan p{
+    width: 500px;
+    margin: 0%;
+    margin-top: 15px;
 }
-.famous p{
-    max-width: 1000px;
-    font-size: 1.1em;
-    font-family: "Montserrat", serif;
-    line-height: 1.7;
-    font-weight: 500;
-    font-style: italic;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 7px;
-    margin-bottom: 6px;
+.japan img{
+    width: 600px;
+    margin-top: 15px;
 }
-.famous a{
-    font-size: 16px;
-    font-family: "Montserrat", serif;
-    margin-bottom: 20px;
-    color: black;
-}
-.famous a:hover,
-.famous a:focus{
-    color:gray;
-}
-.famous img{
-    width: 450px;
-    height: 305px;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-}
-.famous h3{
-    padding-top: 15px;
-    color: black;
-    font-size: 21px;
-    font-weight: 600;
-}
-.grid-famous{
-    width: 100px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 110px;
-    margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: center;
-}
-.famous-section{
+.japan{
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: whitesmoke;
-}
-
-/*SPORTS*/
-.sports{
-    padding: 90px;
-    color: black;
-    background-color: whitesmoke;
-}
-.stadium{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    max-width: 1250px;
-    margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
 }
-.stadium img{
-    width: 450px;
-    height: 305px;
-}
-.stadium p{
-    font-size: 1.1em;
+.japan h4{
+    margin-bottom: 0;
+    font-size: 18px;
     font-family: "Montserrat", serif;
-    margin-bottom: 25px;
-    color: black;
-    font-weight: 500;
-    font-style: italic;
 }
-#sports-p{
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.1em;
-    font-family: "Montserrat", serif;
-    line-height: 1.7;
-    font-weight: 500;
-    font-style: italic;
-}
-.stadium a{
+.japan a{
     font-size: 16px;
     font-family: "Montserrat", serif;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     color: black;
 }
-.stadium a:hover,
-.stadium a:focus{
-    color:gray;
-}
-.sports h3{
-    padding-top: 15px;
+.japan a:hover,
+.japan a:focus{
+    text-decoration: underline;
     color: black;
-    font-size: 21px;
-    font-weight: 600;
-    margin-bottom: 11px;
-}
-.oracle-park{
-   text-align: center;
-}
-.chase-center{
-    text-align: center;
-}
-
-.levis-stadium{
-    text-align: center;
 }
 
 
@@ -602,6 +595,109 @@ H2{
     align-items: center;
     margin-top: 60px;
 }
+.joke h4{
+    margin-bottom: 0;
+    font-size: 18px;
+    font-family: "Montserrat", serif;
+    text-align: center;
+}
+
+
+/*SPORTS*/
+.sports{
+    padding: 90px;
+    color: black;
+    background-color: whitesmoke;
+    padding-bottom: 40px;
+}
+.stadium{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 1250px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+}
+.stadium img{
+    width: 450px;
+    height: 305px;
+}
+.stadium p{
+    font-size: 1.1em;
+    font-family: "Montserrat", serif;
+    margin-bottom: 25px;
+    color: black;
+    font-weight: 500;
+    font-style: italic;
+}
+#sports-p{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1em;
+    font-family: "Montserrat", serif;
+    line-height: 1.7;
+    font-weight: 500;
+    font-style: italic;
+}
+.stadium a{
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+    margin-bottom: 30px;
+    color: black;
+}
+.stadium a:hover,
+.stadium a:focus{
+    color:gray;
+}
+.sports h3{
+    padding-top: 15px;
+    color: black;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 11px;
+}
+.oracle-park{
+   text-align: center;
+}
+.chase-center{
+    text-align: center;
+}
+
+.levis-stadium{
+    text-align: center;
+}
+.bruce-lee img{
+    width: 300px;
+    margin-top: 15px;
+}
+.bruce-lee p{
+    font-size: 1.1em;
+    font-family: "Montserrat", serif;
+    line-height: 1.7;
+    font-weight: 500;
+    font-style: italic;
+}
+.bruce-lee{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.bruce-lee h4{
+    margin-bottom: 0;
+    font-size: 18px;
+    font-family: "Montserrat", serif;
+}
+.bruce-lee a:hover,
+.bruce-lee a:focus{
+    text-decoration: underline;
+}
+
+
 
 /*FOOTER SECTION*/
 footer{
