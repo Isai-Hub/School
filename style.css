@@ -319,13 +319,11 @@ H2{
 }
 .view p{
     max-width: 1000px;
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: "Montserrat", serif;
     line-height: 1.7;
     font-weight: 500;
     font-style: italic;
-    margin-right: auto;
-    margin-left: auto;
 }
 .view a{
     font-size: 14px;
@@ -344,9 +342,10 @@ H2{
     width: 380px;
     height: 400px;
     display: flex;
-    align-items:flex-end;
-    justify-content: center;
-    order:3;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    order: 3;
 }
 .coit{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/coit-photo.jpg) right top / cover;
