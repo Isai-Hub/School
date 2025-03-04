@@ -711,6 +711,7 @@ footer li{
     font-size: 1.3em;
     margin-right: 15px;
     max-width: 1300px;
+    padding: 5px;
 }
 footer ul{
     display: flex;
