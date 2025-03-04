@@ -86,16 +86,17 @@ main{
 .container{
     height: 100vh;
     width: 100%;
-    background-image: url(img/beach.jpg);
+    background-image: url(img/1.page.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: 5s;
 
     animation-name: animate;
+    animation-direction: alternate-reverse;
     animation-play-state: running;
     animation-timing-function: ease-in-out;
-    animation-duration: 55s;
+    animation-duration: 40s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
@@ -107,16 +108,16 @@ main{
         background-image: url(img/2.page.jpg);
     }
     40% {
-        background-image: url(img/3.page.jpg);
+        background-image: url(img/bay-bridge-img.jpg);
     }
     60% {
-        background-image: url(img/4.page.jpg);
+        background-image: url(img/cityhall-img.jpg);
     }
     80% {
         background-image: url(img/5.page.jpg);
     }
     100% {
-        background-image: url(img/beach.jpg);
+        background-image: url(img/1.page.jpg);
     }
 }
 
