@@ -28,6 +28,22 @@ body{
     margin-right: auto;
 }
 
+    @keyframes appear {
+        from {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+        h2, .famous p, h4, h3, a, p{
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry cover 25%;
+        }
+
 /*NAVBAR/HEADER*/
 nav{
     display: flex;
@@ -212,6 +228,7 @@ h3{
     margin-top: 50px;
     padding: 90px;
     padding-bottom: 40px;
+    padding-top: 40px;
 }
 .famous p{
     max-width: 1100px;
@@ -236,12 +253,16 @@ h3{
 .famous img{
     width: 500px;
     height: 305px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
 .famous h3{
     padding: 15px;
     color: black;
     font-size: 21px;
     font-weight: 600;
+    padding-top: 30px;
 }
 .grid-famous{
     width: 100px;
@@ -258,13 +279,16 @@ h3{
     flex-direction: column;
     text-align: center;
     background-color: whitesmoke;
+    width: 650px;
+    height: 530px;
+    border-radius: 10px;
 }
 .facts p{
     margin-top: 30px;
     max-width: 500px;
 }
 .facts img{
-    width: 900px;
+    width: 700px;
     height: 400px;
     margin-top: 20px;
 }
@@ -296,6 +320,7 @@ h3{
     padding: 90px;
     background-color: whitesmoke;
     padding-bottom: 60px;
+    padding-top: 40px;
 }
 .grid-views{
     display: grid;
@@ -448,6 +473,7 @@ H2{
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 40px;
 }
 .fun{
     display: grid;
@@ -607,6 +633,7 @@ H2{
     color: black;
     background-color: whitesmoke;
     padding-bottom: 40px;
+    padding-top: 40px;
 }
 .stadium{
     display: grid;
@@ -747,4 +774,260 @@ footer p{
     margin-bottom: 0;
     font-size: 9px;
     font-family: "Montserrat", serif;
+}
+
+@media screen and (max-width: 400px){
+    h1{
+        font-size: 50px;
+        padding-top: 35%;
+    }
+    nav {
+        width: 100%;
+        position: absolute;
+    }
+    .title {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        height: 100%;
+        width: 100%;
+    }
+    #title{
+        font-size: 1em;
+    }
+    .container{
+        height: 80vh;
+        width: 100%;
+    }
+    button{
+        width: 120px;
+        font-weight: 600;
+    }
+    a{
+        font-size: 14px;
+    }
+    .famous{
+        padding: 0;
+    }
+    .grid-famous {
+        width: 100px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: auto;
+        margin-left: auto;
+        gap: 50px;
+    }
+    .famous h3 {
+        font-size: 19px;
+    }
+    .famous-section{
+        width: 360px;
+        height: 500px;
+    }
+    .famous-section img{
+        width: 340px;
+    }
+    .facts img {
+        width: 360px;
+        height: 170px;
+        margin-top: 10px;
+    }
+    .famous p{
+        font-size: 14px;
+        width: 300px;
+        text-align: center;
+    }
+    .famous a{
+        font-size: 14px;
+    }
+    .facts p {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .view {
+        padding: 23px;
+        background-color: white;
+    }
+    .grid-views {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 0%;
+        margin-left: 0%;
+        width: 0;
+    }
+    H2 {
+        font-size: 2em;
+    }
+    .corona-heights {
+        width: 330px;
+        height: 340px;
+        order: 1;
+    }
+    .vista-point {
+        width: 330px;
+        height: 340px;
+        order: 1;
+    }
+    .mission-dolores {
+        width: 330px;
+        height: 340px;
+        order: 1;
+    }
+    .twin-peaks {
+        width: 330px;
+        height: 340px;
+        order: 1;
+    }
+    .coit {
+        width: 330px;
+        height: 340px;
+        order: 1;
+    }
+    .grand-view {
+        width: 330px;
+        height: 340px;
+        order: 1;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    .view p {
+        width: 350px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .view a {
+        font-size: 12px;
+    }
+    .japan img{
+        width: 360px;
+        height: 230px;
+    }
+    .japan p{
+        font-size: 12px;
+        width: 300px;
+    }
+    .family-time {
+        padding: 5px;
+        max-width: 360px;
+        text-align: center;
+    }
+    .family-time p{
+        font-size: 14px;
+    }
+    .city-hall {
+        width: 360px;
+        height: 350px;
+    }
+    .zoo {
+        width: 360px;
+        height: 350px;
+    }
+    .zoo:hover{
+        transform: none;
+    }
+    .palace-of-arts {
+        width: 360px;
+        height: 350px;
+    }
+    .palace-of-arts:hover{
+        transform: none;
+    }
+    .baker-beach {
+        width: 360px;
+        height: 350px;
+    }
+    .baker-beach:hover{
+        transform: none;
+    }
+    .ghirardelli-square {
+        width: 360px;
+        height: 350px;
+    }
+    .ghirardelli-square:hover{
+        transform: none;
+    }
+    .sciences-academy {
+        width: 360px;
+        height: 350px;
+    }
+    .sciences-academy:hover{
+        transform: none;
+    }
+    .pier-39 {
+        width: 360px;
+        height: 350px;
+    }
+    .pier-39:hover{
+        transform: none;
+    }
+    .fun{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        }
+    .family-time a {
+        font-size: 1rem;
+    }
+    .city-hall h3 a {
+        font-size: 25px;
+        font-family: 'Bebas Neue';
+        font-weight: 600;
+    }
+    .joke p {
+        width: 250px;
+        font-size: 12px;
+        text-align: left;
+    }
+    .sports{
+        padding: 20px;
+        background-color: white;
+    }
+    #sports-p{
+        max-width: 350px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .stadium img {
+        width: 360px;
+        height: 220px;
+    }
+    .stadium {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        max-width: 1250px;
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+    }
+    .sports h3{
+        font-size: 1.1em;
+    }
+    .stadium p {
+        font-size: 12px;
+        margin: 10px;
+    }
+    .stadium a {
+        font-size: 12px;
+    }
+    .bruce-lee img {
+        width: 360px;
+    }
+    .bruce-lee p{
+        font-size: 12px;
+    }
+    .bruce-lee a{
+        font-size: 12px;
+    }
+    footer ul{
+        margin: 0;
+    }
+    .media{
+        margin: 10px;
+    }
+    footer p{
+        font-size: 6px;
+    }
 }
