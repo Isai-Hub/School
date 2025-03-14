@@ -41,7 +41,7 @@ body{
         h2, .famous p, h4, h3, a, p{
             animation: appear linear;
             animation-timeline: view();
-            animation-range: entry cover 25%;
+            animation-range: entry cover 18%;
         }
 
 /*NAVBAR/HEADER*/
@@ -80,7 +80,7 @@ a{
 }
 nav li:hover,
 nav li:focus{
-    box-shadow: inset 200px 0 0 0 rgb(0, 0, 0);;
+    box-shadow: inset 200px 0 0 0 rgb(151, 151, 151);;
 }
 main{
     margin-left: auto;
@@ -214,107 +214,15 @@ button:focus{
 
 /*GRID SECTION*/
 h3{
-    border-radius: 30px 30px 0px 0px;
     font-family: "oswald";
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: white;
     align-content: center;
-    margin: 5px;
+    margin-left: 14px;
+    margin-top: 5px;
+    margin-bottom: 0%;
 }
 
-
-/*FAMOUS SECTION*/
-.famous{
-    margin-top: 50px;
-    padding: 90px;
-    padding-bottom: 40px;
-    padding-top: 40px;
-}
-.famous p{
-    max-width: 1100px;
-    font-size: 1em;
-    font-family: "Montserrat", serif;
-    line-height: 1.7;
-    font-weight: 500;
-    font-style: italic;
-    margin-right: auto;
-    margin-left: auto;
-}
-.famous a{
-    font-size: 16px;
-    font-family: "Montserrat", serif;
-    margin-bottom: 20px;
-    color: black;
-}
-.famous a:hover,
-.famous a:focus{
-    color:gray;
-}
-.famous img{
-    width: 500px;
-    height: 305px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-}
-.famous h3{
-    padding: 15px;
-    color: black;
-    font-size: 21px;
-    font-weight: 600;
-    padding-top: 30px;
-}
-.grid-famous{
-    width: 100px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 110px;
-    margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: center;
-}
-.famous-section{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: whitesmoke;
-    width: 650px;
-    height: 530px;
-    border-radius: 10px;
-}
-.facts p{
-    margin-top: 30px;
-    max-width: 500px;
-}
-.facts img{
-    width: 700px;
-    height: 400px;
-    margin-top: 20px;
-}
-.facts{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 60px;
-}
-.facts h4{
-    margin-bottom: 0;
-    font-size: 20px;
-    font-family: "Montserrat", serif;
-}
-.facts a{
-    font-size: 18px;
-    font-family: "Montserrat", serif;
-    margin-bottom: 0;
-    color: black;
-}
-.facts a:hover,
-.facts a:focus{
-    text-decoration: underline;
-    color: black;
-}
 /*VIEW SECTION*/
 .view{
     padding: 90px;
