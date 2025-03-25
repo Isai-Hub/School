@@ -4,6 +4,7 @@ html {
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
     scroll-behavior: smooth;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 section{
     max-width: 1300px;
@@ -113,7 +114,7 @@ button {
     margin-top: 50px;
 }
 .paragraph{
-    font-size: 14px;
+    font-size: 15px;
     font-family: "Montserrat", serif;
     margin-bottom: 20px;
     color: black;
@@ -167,7 +168,7 @@ li{
 .famous h2 a{
     padding-top: 5px;
     color: black;
-    font-size: 21px;
+    font-size: 23px;
     font-weight: 500;
     padding-bottom: 0;
     text-align: left;
@@ -175,7 +176,7 @@ li{
 .famous h3{
     padding-top: 5px;
     color: black;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     padding-bottom: 0;
     text-align: left;
