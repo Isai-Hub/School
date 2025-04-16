@@ -4,18 +4,18 @@ html {
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
     scroll-behavior: smooth;
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    margin: -8px;
 }
 section{
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
 }
-.container{
+/*.container{
     border: 15px inset red;
     border-radius: 50%;
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
     background-image: url(img/1.page.jpg);
     background-size: cover;
     background-position: center;
@@ -29,7 +29,7 @@ section{
     animation-duration: 50s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-}
+}*/
 @keyframes animate{
     0%{
         background-image: url(img/chinatown-night.jpg);
@@ -50,12 +50,17 @@ section{
         background-image: url(img/bridge-golden.png);
     }
 }
+header{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(img/home-photo-famousplaces) right top / cover;
+    background-position: center;
+    height: 550px;
+    width: 100%;
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: transparent;
-    width: 100%;
+    padding-bottom: 10px;
 }
 
 nav li{
@@ -71,40 +76,43 @@ nav ul{
     align-self: center;
     font-size: 1.7em;
     margin: 15px;
-    color: black;
+    color:white;
     font-family: "Jersey 15", serif;
     padding-left: 50px;
+    font-weight: 500;
 }
 a{
     font-size: 16px;
     font-family: "Montserrat", serif;
     text-decoration: none;
-    color: black;
-    font-weight: 500;
+    color: white;
+    font-weight: 600;
 }
 nav li:hover,
 nav li:focus{
-    box-shadow: inset 200px 0 0 0 rgb(151, 151, 151);;
+    box-shadow: inset 200px 0 0 0 rgb(90, 90, 90);;
 }
 .places{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 200px;
-    margin-top: 150px;
+    margin-left: auto;
+    margin-left: auto;
 }
 .famous-area{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    margin-bottom: 200px;
+    padding-top: 100px;
 }
 h1{
     text-align: center;
-    font-family: 'Bebas Neue';
-    font-size: 3em;
+    font-family: inter;
+    font-size: 4em;
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    color: white;
 }
 #cover-photo{
     width: 600px;
@@ -152,63 +160,77 @@ button {
 .famous{
     margin-top: 50px;
 }
+.pointer{
+    display: flex;
+    justify-content: center;
+    background: lightgoldenrodyellow;
+    width: 100%;
+    border-radius: 15px;
+}
+.pointer li{
+    display: inline;  
+    padding: 30px;
+}
 .paragraph{
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Montserrat", serif;
     margin-bottom: 20px;
     color: black;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 15px;
-    line-height: 1.5;
+    line-height: 2.1;
 }
 .view li{
     margin: 10px;
 }
 iframe{
-    width: 400px;
+    width: 830px;
     height: 200px;
 }
 #famous-p{
-    max-width: 550px;
-    font-size: 18px;
-    font-family: "Montserrat", serif;
-    line-height: 1.6;
-    font-weight: 500;
+    max-width: 1000px;
+    font-size: 2.3em;
+    font-family: inter;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 10px;
+    margin-top: 80px;
+    font-weight: 700;
+    margin-bottom: 80px;
 }
 .famous a{
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Montserrat", serif;
     margin-bottom: 20px;
     color: black;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
 }
 li{
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Montserrat", serif;
-    margin-bottom: 20px;
-    color: black;
-    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    line-height: 1.7;
 }
 .famous a:hover,
 .famous a:focus{
     color:gray;
 }
 .famous img{
-    width: 430px;
-    height: 300px;
+    width: 750px;
+    height: 500px;
     object-fit: cover;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
 }
 .famous h2 a{
-    padding-top: 5px;
+    padding-top: 25px;
     color: black;
-    font-size: 23px;
+    font-size: 25px;
     font-weight: 500;
     padding-bottom: 0;
     text-align: left;
@@ -216,7 +238,7 @@ li{
 .famous h3{
     padding-top: 5px;
     color: black;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 500;
     padding-bottom: 0;
     text-align: left;
@@ -224,7 +246,7 @@ li{
 }
 .grid-famous{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 110px;
     margin-top: 50px;
     margin-right: auto;
@@ -233,13 +255,13 @@ li{
     padding-top: 50px;
 }
 hr{
-    width: 400px;
+    width: 100%;
 }
 .famous-section{
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 430px;
+    width: 830px;
     border-radius: 5px;
 }
 .facts p{
@@ -333,4 +355,67 @@ footer p{
 }
 #copyright{
     border-top: #e9defa;
+}
+
+@media screen and (max-width: 1300px){
+    .famous-area{
+        margin-bottom: 70px;
+    }
+    .places{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1050px){
+    .grid-famous{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 110px;
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 940px){
+    #sf{
+        flex-basis: 100%;
+    }
+    nav li{
+        flex: 1 0 50%;
+		text-align: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .places{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-left: auto;
+    }
+    .container{
+        border: 15px inset red;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        background-image: url(img/1.page.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 5s;
+    
+        animation-name: animate;
+        animation-direction: alternate-reverse;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+        animation-duration: 50s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
 }
