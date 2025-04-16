@@ -433,3 +433,241 @@ footer p{
         text-align: center;
     }
 }
+@media screen and (max-width: 890px){
+    #sf{
+        flex-basis: 100%;
+    }
+    nav li{
+        flex: 1 0 50%;
+		text-align: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .places{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-left: auto;
+    }
+    .container{
+        border: 15px inset red;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        background-image: url(img/1.page.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 5s;
+    
+        animation-name: animate;
+        animation-direction: alternate-reverse;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+        animation-duration: 50s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+    #famous-p {
+        max-width: 800px;
+    }
+    .pointer {
+        display: flex;
+        justify-content: center;
+        background: lightgoldenrodyellow;
+        width: 100%;
+        border-radius: 15px;
+        text-align: center;
+    }
+    .famous-section {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 730px;
+        border-radius: 5px;
+    }
+    footer div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    iframe{
+        width: 750px;
+    }
+    .famous img {
+        width: 650px;
+        height: 400px;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 810px){
+    #sf{
+        flex-basis: 100%;
+    }
+    nav li{
+        flex: 1 0 50%;
+		text-align: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .places{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-left: auto;
+    }
+    .container{
+        border: 15px inset red;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        background-image: url(img/1.page.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 5s;
+    
+        animation-name: animate;
+        animation-direction: alternate-reverse;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+        animation-duration: 50s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+    #famous-p {
+        max-width: 650px;
+    }
+    .pointer {
+        display: flex;
+        justify-content: center;
+        background: lightgoldenrodyellow;
+        width: 100%;
+        border-radius: 15px;
+        text-align: center;
+    }
+    .famous-section {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 630px;
+        border-radius: 5px;
+    }
+    footer div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    iframe{
+        width: 650px;
+    }
+    .famous img {
+        width: 650px;
+        height: 400px;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 700px){
+    #sf{
+        flex-basis: 100%;
+    }
+    nav li{
+        flex: 1 0 50%;
+		text-align: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .places{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-left: auto;
+    }
+    .container{
+        border: 15px inset red;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        background-image: url(img/1.page.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 5s;
+    
+        animation-name: animate;
+        animation-direction: alternate-reverse;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+        animation-duration: 50s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+    #famous-p {
+        max-width: 450px;
+        text-align: center;
+    }
+    .pointer {
+        display: flex;
+        justify-content: center;
+        background: lightgoldenrodyellow;
+        width: 100%;
+        border-radius: 15px;
+        text-align: center;
+    }
+    .famous-section {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 500px;
+        border-radius: 5px;
+    }
+    footer div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    iframe{
+        width: 500px;
+    }
+    .famous img {
+        width: 500px;
+        height: 350px;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .famous-area {
+        margin-bottom: 30px;
+    }
+}
