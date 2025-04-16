@@ -4,7 +4,7 @@ html {
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
     scroll-behavior: smooth;
-    margin: -8px;
+    margin: -9px;
 }
 section{
     max-width: 1300px;
@@ -378,6 +378,9 @@ footer p{
         justify-content: center;
         padding-top: 50px;
     }
+    #famous-p {
+        max-width: 900px;
+    }
 }
 
 @media screen and (max-width: 940px){
@@ -417,5 +420,16 @@ footer p{
         animation-duration: 50s;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
+    }
+    #famous-p {
+        max-width: 800px;
+    }
+    .pointer {
+        display: flex;
+        justify-content: center;
+        background: lightgoldenrodyellow;
+        width: 100%;
+        border-radius: 15px;
+        text-align: center;
     }
 }
