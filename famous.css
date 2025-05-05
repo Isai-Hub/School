@@ -1,10 +1,33 @@
 /*FAMOUS SECTION*/
+ul li ul.dropdown{
+display: block;
+}
+ul li ul.dropdown{
+    width: 10px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background: transparent;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+
 html {
     -moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
+    scroll-behavior: auto;
     scroll-behavior: smooth;
-    margin: -9px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 section{
     max-width: 1300px;
@@ -69,6 +92,11 @@ nav li{
     padding: 20px 35px;
     transition: all .9s;
 }
+
+nav li:hover,
+nav li:focus{
+    box-shadow: inset 200px 0 0 0 rgb(90, 90, 90);
+}
 nav ul{
     margin-right: 15px;
 }
@@ -87,22 +115,6 @@ a{
     text-decoration: none;
     color: white;
     font-weight: 600;
-}
-nav li:hover,
-nav li:focus{
-    box-shadow: inset 200px 0 0 0 rgb(90, 90, 90);;
-}
-.places{
-    margin-left: auto;
-    margin-left: auto;
-}
-.famous-area{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 200px;
-    padding-top: 100px;
 }
 h1{
     text-align: center;
@@ -125,7 +137,7 @@ h1{
 button {
     align-items: center;
     appearance: none;
-    background-image: radial-gradient(100% 100% at 100% 0, rgb(185, 0, 0) 0 , red 100%);
+    background: linear-gradient(132deg, red, red);
     border: 0;
     border-radius: 6px;
     box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
@@ -155,21 +167,35 @@ button {
   }
   button:hover,
   button:focus{
-    color:black;
+    color:rgb(48, 48, 48);
   }
+  .famous-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 200px;
+    padding-top: 130px;
+}
+
+
 .famous{
     margin-top: 50px;
 }
 .pointer{
     display: flex;
     justify-content: center;
-    background: lightgoldenrodyellow;
+    background: black;
     width: 100%;
-    border-radius: 15px;
 }
 .pointer li{
     display: inline;  
-    padding: 30px;
+    padding: 50px;
+}
+.pointer li a:focus,
+.pointer li a:hover{
+    transition: all .5s;
+    color: gray;
 }
 .paragraph{
     font-size: 16px;
@@ -189,7 +215,7 @@ iframe{
 }
 #famous-p{
     max-width: 1000px;
-    font-size: 2.3em;
+    font-size: 2.1em;
     font-family: inter;
     margin-right: auto;
     margin-left: auto;
@@ -201,7 +227,7 @@ iframe{
     font-size: 16px;
     font-family: "Montserrat", serif;
     margin-bottom: 20px;
-    color: black;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-weight: 500;
 }
@@ -228,7 +254,6 @@ li{
 
 }
 .famous h2 a{
-    padding-top: 25px;
     color: black;
     font-size: 25px;
     font-weight: 500;
@@ -263,38 +288,7 @@ hr{
     text-align: left;
     width: 830px;
     border-radius: 5px;
-}
-.facts p{
-    margin-top: 30px;
-    max-width: 500px;
-}
-.facts img{
-    width: 700px;
-    height: 400px;
-    margin-top: 20px;
-}
-.facts{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 60px;
-}
-.facts h4{
-    margin-bottom: 0;
-    font-size: 20px;
-    font-family: "Montserrat", serif;
-}
-.facts a{
-    font-size: 18px;
-    font-family: "Montserrat", serif;
-    margin-bottom: 0;
-    color: black;
-}
-.facts a:hover,
-.facts a:focus{
-    text-decoration: underline;
-    color: black;
+    padding-top: 20px;
 }
 
 
@@ -302,9 +296,8 @@ hr{
 footer{
     color: white;
     background: linear-gradient(132deg, #ffd89b, #19547b);
-    padding: 50px;
+    padding-top: 50px;
     padding-bottom: 15px;
-    margin: -8px;
     margin-top: 50px;
 }
 h4{
@@ -324,6 +317,9 @@ footer div{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+footer ul{
+    padding-left: 0;
 }
 footer a{
     color: white;
@@ -427,10 +423,16 @@ footer p{
     .pointer {
         display: flex;
         justify-content: center;
-        background: lightgoldenrodyellow;
-        width: 100%;
+        background: black;
+        width: 300px;
+        margin-right: auto;
         border-radius: 15px;
         text-align: center;
+        margin-left: auto;
+    }
+    .pointer li {
+        display: flex;
+        padding: 5px;
     }
 }
 @media screen and (max-width: 890px){
@@ -477,10 +479,12 @@ footer p{
     .pointer {
         display: flex;
         justify-content: center;
-        background: lightgoldenrodyellow;
-        width: 100%;
+        background: black;
+        width: 300px;
+        margin-right: auto;
         border-radius: 15px;
         text-align: center;
+        margin-left: auto;
     }
     .famous-section {
         display: flex;
@@ -509,6 +513,10 @@ footer p{
         border-radius: 5px;
         margin-bottom: 20px;
         margin-top: 20px;
+    }
+    .pointer li {
+        display: flex;
+        padding: 5px;
     }
 }
 @media screen and (max-width: 810px){
@@ -555,10 +563,12 @@ footer p{
     .pointer {
         display: flex;
         justify-content: center;
-        background: lightgoldenrodyellow;
-        width: 100%;
+        background: black;
+        width: 300px;
+        margin-right: auto;
         border-radius: 15px;
         text-align: center;
+        margin-left: auto;
     }
     .famous-section {
         display: flex;
@@ -587,6 +597,10 @@ footer p{
         border-radius: 5px;
         margin-bottom: 20px;
         margin-top: 20px;
+    }
+    .pointer li {
+        display: flex;
+        padding: 5px;
     }
 }
 @media screen and (max-width: 700px){
@@ -618,7 +632,6 @@ footer p{
         background-position: center;
         background-repeat: no-repeat;
         transition: 5s;
-    
         animation-name: animate;
         animation-direction: alternate-reverse;
         animation-play-state: running;
@@ -628,38 +641,35 @@ footer p{
         animation-iteration-count: infinite;
     }
     #famous-p {
-        max-width: 450px;
+        max-width: 375px;
         text-align: center;
+        font-size: 1.4em;
     }
-    .pointer {
+    .pointer li {
         display: flex;
-        justify-content: center;
-        background: lightgoldenrodyellow;
-        width: 100%;
-        border-radius: 15px;
-        text-align: center;
+        padding: 5px;
     }
     .famous-section {
         display: flex;
         flex-direction: column;
         text-align: left;
-        width: 500px;
+        width: 400px;
         border-radius: 5px;
     }
     footer div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        width: 500px;
+        width: 380px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
     }
     iframe{
-        width: 500px;
+        width: 375px;
     }
     .famous img {
-        width: 500px;
-        height: 350px;
+        width: 375px;
+        height: 225px;
         object-fit: cover;
         margin-left: auto;
         margin-right: auto;
@@ -669,5 +679,131 @@ footer p{
     }
     .famous-area {
         margin-bottom: 30px;
+        padding-top: 50px;
     }
+    h1{
+        text-align: center;
+        font-family: inter;
+        font-size: 2.5em;
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+        color: white;
+    }
+    .pointer {
+        display: flex;
+        justify-content: center;
+        background: black;
+        width: 300px;
+        margin-right: auto;
+        border-radius: 15px;
+        text-align: center;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 380px){
+    #sf{
+        flex-basis: 100%;
+    }
+    nav li{
+        flex: 1 0 50%;
+		text-align: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .places{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-left: auto;
+    }
+    .container{
+        border: 15px inset red;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        background-image: url(img/1.page.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 5s;
+        animation-name: animate;
+        animation-direction: alternate-reverse;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+        animation-duration: 50s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+    #famous-p {
+        max-width: 350px;
+        text-align: center;
+        font-size: 1.4em;
+    }
+    .pointer li {
+        display: flex;
+        padding: 5px;
+    }
+    .famous-section {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 350px;
+        border-radius: 5px;
+    }
+    footer div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 310px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    iframe{
+        width: 350px;
+    }
+    .famous img {
+        width: 350px;
+        height: 210px;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .famous-area {
+        margin-bottom: 30px;
+        padding-top: 80px;
+    }
+    h1{
+        text-align: center;
+        font-family: inter;
+        font-size: 2.5em;
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+        color: white;
+    }
+    .famous-area {
+        margin-bottom: 30px;
+        padding-top: 50px;
+    }
+    .pointer {
+        display: flex;
+        justify-content: center;
+        background: black;
+        width: 300px;
+        margin-right: auto;
+        border-radius: 15px;
+        text-align: center;
+        margin-left: auto;
+    }
+        
 }

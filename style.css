@@ -60,6 +60,13 @@ nav li{
     padding: 20px 35px;
     transition: all .9s;
 }
+li {
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    line-height: 1.7;
+}
 nav ul{
     margin-right: 15px;
 }
@@ -70,13 +77,14 @@ nav ul{
     color: whitesmoke;
     font-family: "Jersey 15", serif;
     padding-left: 50px;
+    font-weight: 500;
 }
 a{
     font-size: 16px;
     font-family: "Montserrat", serif;
     text-decoration: none;
     color: whitesmoke;
-    font-weight: 500;
+    font-weight: 600;
 }
 nav li:hover,
 nav li:focus{
@@ -251,11 +259,10 @@ H2{
 }
 .view p{
     max-width: 1000px;
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: "Montserrat", serif;
     line-height: 1.7;
     font-weight: 500;
-    font-style: italic;
     margin-left: auto;
     margin-right: auto;
 }
@@ -264,14 +271,15 @@ H2{
     font-family: "Montserrat", serif;
     display: flex;
     margin-bottom: 30px;
-    color: bisque;
+    color: teal;
+    font-weight: 700;
 }
 .view a:hover,
 .view a:focus{
     color:white;
 }
-.twin-peaks{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/twin-peaks-photo.jpg) right top / cover;
+.fun-family-time{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/ghirardelli-cool) right top / cover;
     background-position: center;
     width: 380px;
     height: 400px;
@@ -281,20 +289,9 @@ H2{
     align-items: center;
     order: 3;
 }
-.coit{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/coit-photo.jpg) right top / cover;
-    background-position: center 75%;
-    background-repeat: no-repeat;
-    width: 380px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    order: 4;
-}
-.vista-point{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/vista-point.jpg) right top / cover;
+
+.beautiful-view-points{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(img/twin-peaks-cool) right top / cover;
     background-position: center 75%;
     background-repeat: no-repeat;
     width: 380px;
@@ -305,32 +302,10 @@ H2{
     align-items: center;
     order: 2;
 }
-.mission-dolores{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(img/mission-dolores-park.jpg) right top / cover;
-    background-position: center 75%;
-    background-repeat: no-repeat;
-    width: 380px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    order: 5;
-}
-.grand-view{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(img/grandview-park.jpg) right top / cover;
-    background-position: center 75%;
-    background-repeat: no-repeat;
-    width: 380px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    order: 6;
-}
-.corona-heights{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(img/corona-heights.jpg) right top / cover;
+
+
+.famous-places{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(img/cool-alcatraz) right top / cover;
     background-position: center 45%;
     background-repeat: no-repeat;
     width: 380px;
@@ -341,40 +316,7 @@ H2{
     align-items: center;
     order: 1;
 }
-.japan p{
-    width: 500px;
-    margin: 0%;
-    margin-top: 15px;
-}
-.japan img{
-    width: 750px;
-    height: 400px;
-    margin-top: 15px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4))
-}
-.japan{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 60px;
-}
-.japan h4{
-    margin-bottom: 0;
-    font-size: 18px;
-    font-family: "Montserrat", serif;
-}
-.japan a{
-    font-size: 18px;
-    font-family: "Montserrat", serif;
-    margin-bottom: 0;
-    color: black;
-}
-.japan a:hover,
-.japan a:focus{
-    text-decoration: underline;
-    color: black;
-}
+
 
 
 /*FUN SECTION*/
@@ -641,23 +583,31 @@ H2{
 /*FOOTER SECTION*/
 footer{
     color: white;
-    background-color: #A03232;
-    padding: 50px;
+    background: linear-gradient(132deg, #ffd89b, #19547b);
+    padding-top: 50px;
     padding-bottom: 15px;
+    margin-top: 50px;
+}
+h4{
+    font-size: 22px;
+    color: black;
+    font-weight: 900;
+    font-family: "Montserrat", serif;
 }
 footer li{
     list-style-type: none;
-    font-size: 1.3em;
-    margin-right: 15px;
-    max-width: 1300px;
-    padding: 5px;
+    margin-bottom: 10px;
+}
+footer div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 footer ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 15px;
-    margin: 40px;
+    padding-left: 0;
 }
 footer a{
     color: white;
@@ -666,12 +616,14 @@ footer a{
 }
 footer a:hover,
 footer a:focus{
-    color:rgb(170, 170, 170);
+    color:rgb(48, 48, 48);
 }
 .media{
     display: flex;
     justify-content: center;
     margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .media a{
     padding: 7px;
@@ -684,6 +636,9 @@ footer p{
     margin-bottom: 0;
     font-size: 9px;
     font-family: "Montserrat", serif;
+}
+#copyright{
+    border-top: #e9defa;
 }
 
 @media screen and (max-width: 400px){
